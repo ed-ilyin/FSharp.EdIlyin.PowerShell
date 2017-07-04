@@ -3,7 +3,7 @@ title
     FSharp.EdIlyin.PowerShell
 owners
     Ed Ilyin
-authors 
+authors
     Ed Ilyin
 projectUrl
     https://github.com/ed-ilyin/FSharp.EdIlyin.PowerShell
@@ -14,7 +14,7 @@ licenseUrl
 requireLicenseAcceptance
     false
 copyright
-    Copyright 2015
+    Copyright 2017
 tags
     combinators decoders powershell objects
 summary

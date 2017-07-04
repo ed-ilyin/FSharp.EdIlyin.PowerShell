@@ -9,7 +9,7 @@ source https://nuget.org/api/v2
 #     nuget FSharp.Core ~> 4.1.0 redirects: force
 
 nuget EdIlyin.FSharp.Elm.Core
-nuget FSharp.Core ~> 4.1.0 redirects: force
+nuget FSharp.Core redirects: force
 nuget FSharp.Management
 
 group Build
