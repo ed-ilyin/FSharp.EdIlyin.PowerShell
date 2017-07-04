@@ -84,3 +84,14 @@ let dict decoder =
 
 
 let at path decoder = List.foldBack property path decoder
+
+
+let list decoder =
+    let label = Decode.getLabel decoder |> sprintf "%s List"
+    primitive<obj []> label
+        |> Decode.andThen
+            (List.ofArray
+                >> List.map (Decode.decodeValue decoder)
+                >> Result.combineList
+                >> Decode.fromResult
+            )

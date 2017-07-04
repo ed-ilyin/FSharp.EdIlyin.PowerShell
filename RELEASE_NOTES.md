@@ -1,4 +1,7 @@
-### 0.0.3 - July 4 2017
+### 0.0.4- July 4 2017
+* adds list
+
+#### 0.0.3 - July 4 2017
 * latest FSharp
 
 #### 0.0.2 - July 4 2017
