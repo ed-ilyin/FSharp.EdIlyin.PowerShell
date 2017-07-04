@@ -1,4 +1,4 @@
-﻿namespace FSharp.ProjectTemplate
+namespace FSharp.EdIlyin.PowerShell
 
 /// Documentation for my library
 ///

@@ -11,17 +11,17 @@
 // (This is the original behaviour of ProjectScaffold prior to multi project support)
 let referenceBinaries = []
 // Web site location for the generated documentation
-let website = "/##ProjectName##"
+let website = "/FSharp.EdIlyin.PowerShell"
 
-let githubLink = "##GitUrl##/##GitHome##/##GitName##"
+let githubLink = "https://github.com/ed-ilyin/FSharp.EdIlyin.PowerShell"
 
 // Specify more information about your project
 let info =
-  [ "project-name", "##ProjectName##"
-    "project-author", "##Author##"
-    "project-summary", "##Summary##"
+  [ "project-name", "FSharp.EdIlyin.PowerShell"
+    "project-author", "Ed Ilyin"
+    "project-summary", "combinable decoders for PowerShell objects"
     "project-github", githubLink
-    "project-nuget", "http://nuget.org/packages/##ProjectName##" ]
+    "project-nuget", "http://nuget.org/packages/FSharp.EdIlyin.PowerShell" ]
 
 // --------------------------------------------------------------------------------------
 // For typical project, no changes are needed below

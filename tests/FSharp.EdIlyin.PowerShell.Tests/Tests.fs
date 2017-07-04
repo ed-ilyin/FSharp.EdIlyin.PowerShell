@@ -1,6 +1,6 @@
-﻿module FSharp.ProjectScaffold.Tests
+module FSharp.EdIlyin.PowerShell.Tests
 
-open FSharp.ProjectTemplate
+open FSharp.EdIlyin.PowerShell
 open NUnit.Framework
 
 [<Test>]

@@ -1,0 +1,25 @@
+type project
+title
+    FSharp.EdIlyin.PowerShell
+owners
+    Ed Ilyin
+authors 
+    Ed Ilyin
+projectUrl
+    https://github.com/ed-ilyin/FSharp.EdIlyin.PowerShell
+iconUrl
+    https://raw.githubusercontent.com/ed-ilyin/FSharp.EdIlyin.PowerShell/master/docs/files/img/logo.png
+licenseUrl
+    https://github.com/ed-ilyin/FSharp.EdIlyin.PowerShell/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    combinators decoders powershell objects
+summary
+    combinable decoders for PowerShell objects
+description
+    Combinable decoders for PowerShell objects
+
+
