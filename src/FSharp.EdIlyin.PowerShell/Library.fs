@@ -19,13 +19,10 @@ let property name decoder =
 
                     | typ ->
                         label
-                            => sprintf ", but got unexpected %A %A"
-                                (typ.GetType ())
-                                psobj
-                            |> Err
+                            => psobj
+                            |> Decode.ExpectingButGot
 
-            with | error ->
-                label => sprintf "in %A, but got unexpected %A" psobj error |> Err
+            with | error -> string error |> Decode.Message
         )
 
 
@@ -33,14 +30,12 @@ let primitive<'T> label =
     Decode.primitive label
         (fun (input: obj) ->
             match input with
-                | :? 'T as res -> Ok res
+                | :? 'T as res -> Decode.Decoded res
 
                 | typ ->
                     label
-                        => sprintf ", but got unexpected %A %A"
-                            (typ.GetType ())
-                            input
-                        |> Err
+                        => input
+                        |> Decode.ExpectingButGot
         )
 
 
@@ -60,7 +55,7 @@ let array decoder =
     let label = Decode.getLabel decoder |> sprintf "%s Array"
     primitive<obj []> label
         |> Decode.andThen
-            (Array.map (Decode.decodeValue decoder)
+            (Array.map (Decode.decode decoder)
                 >> Result.combineArray
                 >> Decode.fromResult
             )
@@ -74,7 +69,7 @@ let dict decoder =
                 pso.Properties
                     |> Seq.map
                         (fun x ->
-                            Decode.decodeValue decoder x.Value
+                            Decode.decode decoder x.Value
                                 |> Result.map ((=>) x.Name)
                         )
                     |> Result.combine
@@ -91,7 +86,7 @@ let list decoder =
     primitive<obj []> label
         |> Decode.andThen
             (List.ofArray
-                >> List.map (Decode.decodeValue decoder)
+                >> List.map (Decode.decode decoder)
                 >> Result.combineList
                 >> Decode.fromResult
             )

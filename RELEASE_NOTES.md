@@ -1,3 +1,6 @@
+### 0.0.5- July 6 2017
+* switches to Elm 2.0
+
 ### 0.0.4- July 4 2017
 * adds list
 
