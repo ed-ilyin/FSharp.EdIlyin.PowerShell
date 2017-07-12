@@ -1,3 +1,6 @@
+### 0.0.6 - July 12 2017
+* back to net4.5 and target 4.1.0.0
+
 ### 0.0.5- July 6 2017
 * switches to Elm 2.0
 

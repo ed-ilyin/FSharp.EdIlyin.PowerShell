@@ -5,8 +5,8 @@ open System.Reflection
 [<assembly: AssemblyTitleAttribute("FSharp.EdIlyin.PowerShell")>]
 [<assembly: AssemblyProductAttribute("FSharp.EdIlyin.PowerShell")>]
 [<assembly: AssemblyDescriptionAttribute("combinable decoders for PowerShell objects")>]
-[<assembly: AssemblyVersionAttribute("0.0.5")>]
-[<assembly: AssemblyFileVersionAttribute("0.0.5")>]
+[<assembly: AssemblyVersionAttribute("0.0.6")>]
+[<assembly: AssemblyFileVersionAttribute("0.0.6")>]
 [<assembly: AssemblyConfigurationAttribute("Release")>]
 do ()
 
@@ -14,6 +14,6 @@ module internal AssemblyVersionInformation =
     let [<Literal>] AssemblyTitle = "FSharp.EdIlyin.PowerShell"
     let [<Literal>] AssemblyProduct = "FSharp.EdIlyin.PowerShell"
     let [<Literal>] AssemblyDescription = "combinable decoders for PowerShell objects"
-    let [<Literal>] AssemblyVersion = "0.0.5"
-    let [<Literal>] AssemblyFileVersion = "0.0.5"
+    let [<Literal>] AssemblyVersion = "0.0.6"
+    let [<Literal>] AssemblyFileVersion = "0.0.6"
     let [<Literal>] AssemblyConfiguration = "Release"
