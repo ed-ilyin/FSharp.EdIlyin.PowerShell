@@ -1,8 +1,7 @@
 module FSharp.EdIlyin.PowerShell
 
 open System.Management.Automation
-open EdIlyin.FSharp.Elm.Core
-// open EdIlyin.FSharp.Elm.Core.Decode
+open FSharp.EdIlyin.Core
 
 
 let property name decoder =
