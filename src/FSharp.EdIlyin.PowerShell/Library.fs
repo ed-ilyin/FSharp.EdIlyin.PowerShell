@@ -4,9 +4,9 @@ open System.Management.Automation
 open FSharp.EdIlyin.Core
 
 
-let property name decoder =
+let field name decoder =
     let label =
-        sprintf "%s property '%s'" (Decode.getLabel decoder) name
+        Decode.getLabel decoder |> sprintf "%s -> %s" name
 
     Decode.primitive label
         (fun (psobj: obj) ->
@@ -20,6 +20,9 @@ let property name decoder =
 
             with | error -> Decode.expectingButGot label psobj
         )
+
+
+let property = field
 
 
 let primitive<'T> label =

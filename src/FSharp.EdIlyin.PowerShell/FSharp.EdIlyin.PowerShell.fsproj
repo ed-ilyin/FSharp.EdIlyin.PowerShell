@@ -3,7 +3,7 @@
     <ProjectGuid>fc899792-209b-4c34-963a-1654974f3f3e</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <TargetFrameworks>net461;net462</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
