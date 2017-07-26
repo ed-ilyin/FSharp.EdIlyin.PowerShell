@@ -16,12 +16,9 @@ let property name decoder =
                         let prop = pso.Properties.Item name
                         Decode.run decoder prop.Value
 
-                    | typ ->
-                        label
-                            => psobj
-                            |> Decode.ExpectingButGot
+                    | typ -> Decode.expectingButGot label psobj
 
-            with | error -> string error |> Decode.Message
+            with | error -> Decode.expectingButGot label psobj
         )
 
 
@@ -30,24 +27,23 @@ let primitive<'T> label =
         (fun (input: obj) ->
             match input with
                 | :? 'T as res -> Decode.Decoded res
-
-                | typ ->
-                    label
-                        => input
-                        |> Decode.ExpectingButGot
+                | x -> x.GetType () |> Decode.expectingButGot label
         )
 
 
-let string = primitive<string> "string"
+let string = primitive<string> "an String"
 
 
-let int = primitive<int> "int"
+let int = primitive<int> "an Int"
 
 
-let int64 = primitive<int> "int64" |> Decode.map int64
+let int64 = primitive<int64> "an Int64"
 
 
-let bool = primitive<bool> "bool"
+let uint32 = primitive<uint32> "an UInt32"
+
+
+let bool = primitive<bool> "a Boolean"
 
 
 let array decoder =
