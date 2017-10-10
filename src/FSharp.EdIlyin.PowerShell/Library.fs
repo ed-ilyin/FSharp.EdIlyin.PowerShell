@@ -29,7 +29,7 @@ let primitive<'T> label =
     Decode.primitive label
         (fun (input: obj) ->
             match input with
-                | :? 'T as res -> Decode.Decoded res
+                | :? 'T as res -> Ok res
                 | x -> x.GetType () |> Decode.expectingButGot label
         )
 

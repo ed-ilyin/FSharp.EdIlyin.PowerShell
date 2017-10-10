@@ -1,16 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup Label="Globals">
     <ProjectGuid>fc899792-209b-4c34-963a-1654974f3f3e</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
-    <Version>1.0.3</Version>
-    <TargetFrameworks>net461;net462</TargetFrameworks>
+    <Version>1.0.4</Version>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Library.fs" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="FSharp.EdIlyin.Core" Version="1.0.7" />
-    <PackageReference Include="FSharp.Management" Version="0.4.5" />
-  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
