@@ -1,24 +1,24 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "91a6c3a806f6972ba886944c26854872bcc1c66d"
+    "signature": "15dcb8a3194ace9428134ab19586f573c79c4f67"
   },
   "compilationOptions": {},
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "FSharp.EdIlyin.PowerShell/1.0.4": {
+      "FSharp.EdIlyin.PowerShell/1.0.5": {
         "dependencies": {
           "Aether": "8.2.0",
           "Chiron": "6.2.1",
           "FParsec": "1.0.3",
           "FSharp.Core": "4.2.3",
-          "FSharp.EdIlyin.Core": "1.1.11",
+          "FSharp.EdIlyin.Core": "1.1.12",
           "FSharp.Management": "0.4.5",
           "Hopac": "0.3.23",
           "Microsoft.NETCore.Platforms": "2.0.0",
           "Microsoft.NETCore.Targets": "2.0.0",
-          "NETStandard.Library": "2.0.1",
+          "NETStandard.Library": "2.0.0",
           "System.Collections": "4.3.0",
           "System.Collections.Concurrent": "4.3.0",
           "System.Console": "4.3.0",
@@ -91,7 +91,7 @@
       "Aether/8.2.0": {
         "dependencies": {
           "FSharp.Core": "4.2.3",
-          "NETStandard.Library": "2.0.1"
+          "NETStandard.Library": "2.0.0"
         },
         "runtime": {
           "lib/netstandard1.6/Aether.dll": {}
@@ -109,7 +109,7 @@
       "FParsec/1.0.3": {
         "dependencies": {
           "FSharp.Core": "4.2.3",
-          "NETStandard.Library": "2.0.1"
+          "NETStandard.Library": "2.0.0"
         },
         "runtime": {
           "lib/netstandard1.6/FParsec.dll": {},
@@ -146,13 +146,14 @@
           "lib/netstandard1.6/FSharp.Core.dll": {}
         }
       },
-      "FSharp.EdIlyin.Core/1.1.11": {
+      "FSharp.EdIlyin.Core/1.1.12": {
         "dependencies": {
           "Chiron": "6.2.1",
+          "FSharp.Core": "4.2.3",
           "Hopac": "0.3.23"
         },
         "runtime": {
-          "lib/net45/FSharp.EdIlyin.Core.dll": {}
+          "lib/netstandard2.0/FSharp.EdIlyin.Core.dll": {}
         }
       },
       "FSharp.Management/0.4.5": {
@@ -168,7 +169,7 @@
       "Hopac/0.3.23": {
         "dependencies": {
           "FSharp.Core": "4.2.3",
-          "NETStandard.Library": "2.0.1"
+          "NETStandard.Library": "2.0.0"
         },
         "runtime": {
           "lib/netstandard1.6/Hopac.Core.dll": {},
@@ -178,7 +179,7 @@
       },
       "Microsoft.NETCore.Platforms/2.0.0": {},
       "Microsoft.NETCore.Targets/2.0.0": {},
-      "NETStandard.Library/2.0.1": {
+      "NETStandard.Library/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0"
         }
@@ -770,7 +771,7 @@
     }
   },
   "libraries": {
-    "FSharp.EdIlyin.PowerShell/1.0.4": {
+    "FSharp.EdIlyin.PowerShell/1.0.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -803,12 +804,12 @@
       "path": "fsharp.core/4.2.3",
       "hashPath": "fsharp.core.4.2.3.nupkg.sha512"
     },
-    "FSharp.EdIlyin.Core/1.1.11": {
+    "FSharp.EdIlyin.Core/1.1.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TDzDarxu58iDMaohzn565NfTymCE8Lae7Ng3u6F6YKQu8n5lQM1OYXep29MJEGHCwA+eDEhAA5smiI7e3HgI/A==",
-      "path": "fsharp.edilyin.core/1.1.11",
-      "hashPath": "fsharp.edilyin.core.1.1.11.nupkg.sha512"
+      "sha512": "sha512-r+dEq1wNGbpELSlIRQihGB1NlY592ZKUL6aLcTGlR9zzf+wS6F3salIFY6G3pbN45957zDTmQFjblCqL8yvvLA==",
+      "path": "fsharp.edilyin.core/1.1.12",
+      "hashPath": "fsharp.edilyin.core.1.1.12.nupkg.sha512"
     },
     "FSharp.Management/0.4.5": {
       "type": "package",
@@ -838,12 +839,12 @@
       "path": "microsoft.netcore.targets/2.0.0",
       "hashPath": "microsoft.netcore.targets.2.0.0.nupkg.sha512"
     },
-    "NETStandard.Library/2.0.1": {
+    "NETStandard.Library/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
-      "path": "netstandard.library/2.0.1",
-      "hashPath": "netstandard.library.2.0.1.nupkg.sha512"
+      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "path": "netstandard.library/2.0.0",
+      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
